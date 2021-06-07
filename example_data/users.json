@@ -1,0 +1,15 @@
+[{
+  "_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "first_name": "Guntur",
+  "last_name": "Saputro",
+  "phone_number": "0811255501",
+  "address": "Jl. Kebon Sirih No. 1",
+  "pin": "12345678",
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.158Z"
+  },
+  "updated_date": {
+    "$date": "2021-06-07T09:45:04.158Z"
+  },
+  "balance": 0
+}]

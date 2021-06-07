@@ -1,0 +1,37 @@
+[{
+  "_id": "7ac6018a-5569-4f99-acb6-a5f65d637fc0",
+  "_cls": "Topup",
+  "amount": 10000,
+  "balance_before": 0,
+  "balance_after": 10000,
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.159Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+},{
+  "_id": "01c8b32e-3118-4d2e-9c13-85520397fafa",
+  "_cls": "Topup",
+  "amount": 20000,
+  "balance_before": 10000,
+  "balance_after": 30000,
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.159Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+},{
+  "_id": "c85e67d1-239d-4f50-9bde-a83eb75efea0",
+  "_cls": "Topup",
+  "amount": 50000,
+  "balance_before": 30000,
+  "balance_after": 80000,
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.159Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+}]

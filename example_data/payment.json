@@ -1,0 +1,49 @@
+[{
+  "_id": "b5eb0fb4-8362-48cf-aa44-60dda68b0fd3",
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "amount": 100,
+  "remarks": "Pulsa Telkomsel 100k",
+  "balance_before": 80000,
+  "balance_after": 79900,
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.160Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+},{
+  "_id": "d51572b7-bec7-45df-8cc1-eb2f8f086128",
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "amount": 1000,
+  "remarks": "Pulsa Telkomsel 100k",
+  "balance_before": 79900,
+  "balance_after": 78900,
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.160Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+},{
+  "_id": "12e24091-56b9-49d7-9568-0c7f7598165f",
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "amount": 5000,
+  "remarks": "Pulsa Telkomsel 100k",
+  "balance_before": 78900,
+  "balance_after": 73900,
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.160Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+},{
+  "_id": "24403faf-e594-4463-ab38-2586edbc1383",
+  "user_id": "7eb03b7c-4583-4c04-ba2f-3f274b6fca5b",
+  "amount": 2000,
+  "remarks": "Pulsa Telkomsel 100k",
+  "balance_before": 73900,
+  "balance_after": 71900,
+  "created_date": {
+    "$date": "2021-06-07T09:45:04.160Z"
+  },
+  "transaction_type": "CREDIT",
+  "status": "SUCCESS"
+}]
