@@ -1,5 +1,7 @@
 import os
 import sys
+from dotenv import dotenv_values
+env_list = dotenv_values()
 
 
 PYTHON_VERSION = sys.version_info[0]
@@ -23,7 +25,8 @@ class Config:
         pass
 
     BASE_URL = 'http://127.0.0.1:8000/'
-    APP_NAME = os.environ.get('APP_NAME', '')
+    APP_NAME = os.environ.get('APP_NAME', 'app')
+    os.environ["SECRET_KEY"] = env_list.get('SECRET_KEY', 'asdvjopq2309vh91834')
     if os.environ.get('SECRET_KEY'):
         SECRET_KEY = os.environ.get('SECRET_KEY')
     else:
@@ -37,8 +40,6 @@ class Config:
         urllib.parse.uses_netloc.append('redis')
         url = urllib.parse.urlparse(REDIS_URL)
     else:
-        # urlparse.uses_netloc.append('redis')
-        # url = urlparse.urlparse(REDIS_URL)
         raise Exception
 
     RQ_DEFAULT_HOST = url.hostname
@@ -50,7 +51,7 @@ class Config:
     def init_app(app):
         # mongo config
         app.config['MONGODB_SETTINGS'] = {
-            'db': 'mnc',
+            'db': 'mnc_database',
         }
         app.config["TESTING"] = False
         app.config["SECRET_KEY"] = os.environ.get('SECRET_KEY')
@@ -70,8 +71,6 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     ASSETS_DEBUG = True
-    # SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL',
-    #     'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite'))
 
     @classmethod
     def init_app(cls, app):
@@ -103,6 +102,9 @@ class ProductionConfig(Config):
 
     @classmethod
     def init_app(cls, app):
+        app.config['MONGODB_SETTINGS'] = {
+            'db': 'mnc_database',
+        }
         Config.init_app(app)
         assert os.environ.get('SECRET_KEY'), 'SECRET_KEY IS NOT SET!'
 
